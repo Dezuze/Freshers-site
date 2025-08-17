@@ -25,9 +25,17 @@ body{
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{width:44px;height:44px;border-radius:8px;object-fit:cover;filter:brightness(0.82) contrast(0.98)}
 .brand .title{font-weight:700;color:#fff}
-.nav-links a{color:#fff}
+.nav-links a{color:#fff;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;transition:background .18s, color .18s}
+.nav-links a:hover{background:rgba(255,255,255,0.06);color:#fff}
 .nav-links{display:flex;gap:18px;align-items:center}
 .btn-primary{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:10px 16px;border-radius:10px;border:none;cursor:pointer}
+
+/* Mobile menu styles */
+@media (max-width:800px){
+  .nav{padding-bottom:8px}
+  .nav-inner{padding:10px 16px}
+  header .nav > div > button{padding:8px;border-radius:8px}
+}
 
 /* Hero */
 .hero{position:relative;min-height:64vh;display:flex;align-items:center}

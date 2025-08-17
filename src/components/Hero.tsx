@@ -14,8 +14,7 @@ const Hero: React.FC = () => {
           <h1>Shape your future at CEP Campus</h1>
           <p>Join a community of innovators — world-class faculty, modern labs, and a vibrant campus life.</p>
           <div className="cta">
-            <a className="btn-primary" href="#apply">Apply Now</a>
-            <a href="#schedule" style={{alignSelf:'center',padding:'10px 14px',borderRadius:10,background:'rgba(255,255,255,0.08)',color:'#fff',textDecoration:'none'}}>Bus Schedule</a>
+            <a href="#schedule" style={{alignSelf:'center',padding:'10px 14px',borderRadius:10,background:'rgba(255,255,255,0.12)',color:'#fff',textDecoration:'none',fontWeight:700}}>Bus Schedule</a>
           </div>
         </div>
       </div>
