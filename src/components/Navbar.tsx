@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
       <div className="nav-inner">
         <div className="brand">
           <img src="/logo.png" alt="logo" />
-          <div>
+          <div className="brand-meta">
             <div className="title">CEP Campus</div>
             <div className="muted" style={{ fontSize: 12, color: 'var(--muted)' }}>Excellence in Education</div>
           </div>
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
           <a href="#schedule" aria-label="schedule">Schedule</a>
         </nav>
 
-        <button aria-label="menu" onClick={() => setOpen(!open)} style={{background:'transparent',border:'none',cursor:'pointer',color:'#fff'}}>
+        <button className="nav-toggle" aria-label="menu" onClick={() => setOpen(!open)}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" d={open ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'} />
           </svg>
@@ -27,9 +27,9 @@ const Navbar: React.FC = () => {
       </div>
 
       {open && (
-        <div style={{padding:'12px 20px', borderTop:'1px solid rgba(255,255,255,0.06)', background:'rgba(2,6,23,0.96)'}}> 
-          <a href="#" style={{display:'block',padding:'8px 0',color:'#fff'}}>Home</a>
-          <a href="#schedule" style={{display:'block',padding:'8px 0',color:'#fff'}}>Schedule</a>
+        <div className="nav-mobile"> 
+          <a href="#" className="nav-mobile-link">Home</a>
+          <a href="#schedule" className="nav-mobile-link">Schedule</a>
         </div>
       )}
     </header>
